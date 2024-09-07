@@ -1,12 +1,7 @@
-título: dish and order site
--um projeto simples para gerenciar o cardápio e a comanda de um restaurante
+titulo: Stock management program - backend
 
-instruções de configuração do ambiente:
--importe as bibliotecas flask e flaskrestx
--no código, insira o caminho do diretório dos htmls (neste caso já está configurado)
--no código, insira o caminho do diretório das imagens (neste caso já está configurado)
+descrição: um projeto feito para o trabalho de MVP crud, feito para adicionar, alterar ou deletar itens de um estoque
 
-como usar:
--para inicializar o projeto, clique duas vezes em "app.py"
--depois vá até http://127.0.0.1:5000/index
--caso necessário, deixe o link ou crie um qrcode que leve até a pagina "view_menu" para que os clientes possam vê-lo
+instruções de instalação:é necessário ter as biblíotecas flask e flaskrestx, indo até o prompt de comando em modo adm e digitando "pip install Flask" e "pip install flask-RESTx"
+também deve-se colocar dentro da pasta deste projeto, a pasta deste outro (link)
+logo em seguida, ir até "app.py" e executa-lo, os dois caminhos do projeto são http://127.0.0.1:5000/home para o projeto e http://127.0.0.1:5000/swagger para ver a api
