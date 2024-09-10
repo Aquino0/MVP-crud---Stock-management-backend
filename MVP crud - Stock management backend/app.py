@@ -1,8 +1,11 @@
 from flask import Flask, request, jsonify, render_template
 from flask_restx import Api, Resource, fields
+from flask_cors import CORS
 import sqlite3
 
 app = Flask(__name__)
+cors=CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Configuração da API e documentação Swagger
 api = Api(app, doc='/swagger')  # Define o endpoint da documentação Swagger
@@ -12,6 +15,7 @@ ns = api.namespace('products', description='Operations related to products')
 
 # Define o modelo para o produto
 product_model = api.model('Product', {
+    'id': fields.String(required=True, description='The product id'),
     'name': fields.String(required=True, description='The product name'),
     'category': fields.String(required=True, description='The product category'),
     'price': fields.Float(required=True, description='The product price'),
