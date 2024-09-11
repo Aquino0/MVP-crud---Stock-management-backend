@@ -8,7 +8,7 @@ cors=CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Configuração da API e documentação Swagger
-api = Api(app, doc='/swagger')  # Define o endpoint da documentação Swagger
+api = Api(app, doc='/api')  # Define o endpoint da documentação Swagger
 
 # Define o namespace para organizar as rotas
 ns = api.namespace('products', description='Operations related to products')
